@@ -1,0 +1,130 @@
+.Header {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+  }
+  
+  .headerWrapper {
+    max-width: var(--tamanho-maximo);
+    margin: 0 auto;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ulWrapper {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .navLi .linksMenuLi {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+  }
+  
+  .ulWrapper .navLi .linksMenuLi:hover {
+    color: var(--color-purple);
+  }
+  
+  .navMenu .ulWrapper .navLi{
+    position: relative;
+  }
+  
+  .navMenu .ulWrapper .navLi::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: var(--color-red);
+    left: 0;
+    bottom: -10px;
+    transition: .5s ease-in-out;
+  }
+  
+  .navMenu .ulWrapper .navLi:hover::after{
+    width: 100%;
+    transition: .5s ease-in;
+  }
+  
+  .ulWrapper .loginButton {
+    background-color: var(--color-red);
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    border-radius: 10px;
+    border: 1px solid var(--color-white);
+  }
+
+  .ulWrapper .loginButton:hover {
+    color: var(--color-white);
+    background: var(--color-purple);
+    border: 1px solid var(--color-purple);
+  }
+
+  .ulWrapper .registerButton {
+    background-color: var(--color-purple);
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    border-radius: 10px;
+  }
+  
+  .ulWrapper .registerButton:hover {
+    color: var(--color-purple);
+    background: var(--color-white);
+  }
+  #buttonMobile {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    /* / Menu mobile */
+    .navMenu {
+      display: none;
+    }
+  
+    #menuIcons {
+      width: 20px;
+      height: 20px;
+    }
+  
+    #buttonMobile {
+      display: block;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+      cursor: pointer;
+      height: 28px;
+      width: 28px;
+    }
+  
+    .active .navMenu {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  
+    .ulWrappe .navLi {
+      padding: 1rem;
+    }
+    .active .ulWrapper {
+      text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 1rem;
+    }
+    /* // Menu mobile */
+  }
+  
