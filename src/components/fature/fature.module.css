@@ -1,0 +1,23 @@
+.fetureWrraper{
+    padding-top: 2rem;
+    margin: 0 auto;
+    max-width: var(--tamanho-maximo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fetureWrraper h2{
+    color: var(--color-white);
+    padding-bottom: 2rem;
+    max-width: 30ch;
+}
+
+@media (max-width:600px){
+    .fetureWrraper{
+        text-align: center;
+        padding: 1rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,60 @@
+.callTo{
+  margin: 4rem 0;
+}
+
+.CalltoAction .calltoWrapper{
+    position: relative;
+    max-width: var(--tamanho-maximo);
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.calltoContainer{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000ad;
+    backdrop-filter:blur(15px);
+    border-radius: 0.625rem;
+}
+
+
+.calltoWrapper .calltoContent h2{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.calltoWrapper .calltoContent p{
+    font-size: 1rem;
+    color: var(--color-white);
+    max-width: 40ch;
+}
+
+.CalltoAction .calltoWrapper::before{
+    content: "";
+    position: absolute;
+    transform: translateY(25%);
+    right: 0;
+    height: 240px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(155,81,224,1) 0%, rgba(48,129,237,1) 100%);
+    filter: blur(30px);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+@media (max-width:600px){
+    .calltoContainer{
+        flex-direction: column;
+        margin: 0 1rem;
+        padding: 1rem 0.625rem;
+    }
+    .CalltoAction .calltoWrapper::before{
+        transform: translateY(0%);
+        height: 400px;
+    }
+   
+}

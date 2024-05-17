@@ -22,7 +22,7 @@ const Header = () => {
       <div className={style.headerWrapper}>
         <div>
           <a className={style.logoA} href="/">
-            <img src={LogoMenu} alt="Logo Aston Martin" />
+            <img src={LogoMenu} alt="Logo sevencode" />
           </a>
         </div>
         <button id={style.buttonMobile} onClick={toggleMenu}>
@@ -38,12 +38,12 @@ const Header = () => {
               </li>
             ))}
             <li className={style.navLiButton}>
-              <a className={style.loginButton} href="">
+              <a className={style.loginButton} href="#">
                 Login
               </a>
             </li>
 						<li className={style.navLiButton}>
-              <a className={style.registerButton} href="">
+              <a className={style.registerButton} href="#">
                 Registro
               </a>
             </li>

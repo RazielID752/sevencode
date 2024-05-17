@@ -87,6 +87,10 @@
   
   @media (max-width: 600px) {
     /* / Menu mobile */
+    .headerWrapper {
+      max-width: 450px;
+    }
+
     .navMenu {
       display: none;
     }
@@ -115,7 +119,7 @@
       right: 0;
       top: 60px;
       width: 100%;
-      background-color: #ffffff;
+      background-color: #000000;
       z-index: 1;
     }
   
