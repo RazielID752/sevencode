@@ -7,8 +7,8 @@ import IconClose from "../../assets/img/menu-closer.svg";
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
   const links = [
-    { name: "Inicio", link: "#carrosell-home" },
-    { name: "Sobre", link: "#novos-projetos" },
+    { name: "Inicio", link: "/" },
+    { name: "Sobre", link: "/sobre" },
     { name: "Linguagem", link: "/" },
     { name: "Documentação", link: "/" },
   ];
