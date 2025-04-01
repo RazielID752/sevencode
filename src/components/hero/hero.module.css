@@ -11,7 +11,7 @@
 
 .heroContent h2{
     font-size: 3.125rem;
-    font-weight: 500;
+    font-weight: 700;
     max-width: 18ch;
     color: #fff;
 }
@@ -21,10 +21,11 @@
     font-weight: 500;
     max-width: 50ch;
     color: #fff;
-    padding-bottom: 2rem;
+    padding:1rem 0;
 }
 
 .containerBtn{
+    margin-top: 1rem;
     display: flex;
     gap: 12px;
 }
